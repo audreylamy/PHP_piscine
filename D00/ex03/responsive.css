@@ -1,0 +1,94 @@
+*{
+	background-color: white;
+}
+#title{
+	text-align: center;
+	font-size: 2vw;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+#image{
+	text-align: center;
+}
+img{
+	width: 15vw;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+#part1
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+#part2
+{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px;
+}
+td{
+	width: 50px;
+	position: relative;
+}
+tr{
+	height: 80px;
+}
+.empty{
+	border: 1px solid black;
+}
+.size{
+	float: right;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 0.5vw;
+	position: relative;
+}
+.name{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 35px;
+	font-size: 1.3vw;
+}
+.name2{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 35px;
+	font-size: 1.3vw;
+}
+.num{
+	margin-top: 15px;
+	font-size: 0.5vw;
+}
+.non_metaux{
+	background-color: rgb(179, 102, 255);
+}
+.halogenes{
+	background-color: rgb(231, 122, 208);
+}
+.gaze_nobles{
+	background-color: rgb(109, 208, 233);
+}
+.alcalins{
+	background-color: rgb(240, 184, 112);
+}
+.alcalino{
+	background-color: rgb(245, 205, 114);
+}
+.metalloides{
+	background-color: rgb(114, 245, 147);
+}
+.transition{
+	background-color: rgb(220, 241, 100);
+}
+.actinides{
+	background-color: rgb(177, 238, 116);
+}
+.lanthanides{
+	background-color: rgb(198, 241, 154);
+}
+.other{
+	background-color: rgb(241, 253, 81);
+}
+.inconnus{
+	background-color: rgb(192, 192, 192);
+}

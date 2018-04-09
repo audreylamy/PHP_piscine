@@ -1,0 +1,162 @@
+body{
+	width: 100%;
+	position: relative;
+	background-color: rgb(5, 190, 175);
+}
+
+#block{
+	width: 96%;
+	min-height: 92vh;
+	position: absolute;
+	background-color: white;
+	margin-top: 0.5%;
+	margin-left: 1.5%;
+}
+
+nav{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(163, 219, 210);
+	opacity: 0.7;
+	float: left;
+}
+
+#logo{
+	font-size: 1.1vw;
+	margin: -5px;
+	font-family: Monoton;
+	letter-spacing: 3px;
+}
+
+#bloc_compte{
+	position: relative;
+	width: 800px;
+	float: right;
+	height: 60px;
+	text-align: right;
+}
+
+#accueil{
+	position: absolute;
+	right: 100px;
+	top: 20px;
+	font-size: 0.8vw;
+	font-family: Roboto;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+#arrow{
+	display: inline-block;
+	width: 8%;
+	margin-right: 9px;
+	margin-top: 12px;
+}
+
+#accueil:hover {
+	color: rgb(36, 70, 61);
+	cursor: crosshair;
+}
+
+#bloc_connexion{
+	width: 100%;
+	position: relative;
+	min-height: 86vh;
+	margin-top: 60px;
+}
+
+/*form*/
+
+h1
+{
+	padding-top: 1%;
+	font-family: Roboto;
+	font-size: 1vw;
+	margin-left: 20px;
+}
+
+#h2
+{
+	font-size: 0.7vw;
+	margin-left: 20px;
+}
+
+.input1[type=text], .input1[type=tel], .input1[type=date], .select1, .input1
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+	font-size: 0.6vw;
+	color: #A9A9A9;
+	margin-left: -200px;
+	font-family: Roboto;
+}
+  
+.label1
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 0.6vw;
+	color: #000000;
+	margin-left: 20px;
+}
+  
+.input1[type=submit]
+{
+    background-color: rgb(82, 201, 201);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float: center;
+	opacity: 0.6;
+	font-family: Roboto;
+	letter-spacing: 1px;
+}
+
+.input1[type=submit]:hover
+{
+    opacity: 0.5;
+}
+  
+.container
+{
+	margin-top : -350px;
+    border-radius: 10px;
+	padding: 20px;
+}
+  
+.col-26
+{
+    float: left;
+    width: 40%;
+    margin-top: 10px;
+}
+  
+.col-76 
+{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+  
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px)
+{
+    .col-25, .col-75, .input1[type=submit]
+    {
+      width: 100%;
+      margin-top: 100%;
+    }
+}

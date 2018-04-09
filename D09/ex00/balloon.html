@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: rgb(255, 0, 0);
+			border-radius: 100px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id='size' ></div>
+		<script language="javascript">
+			var element = document.getElementById('size');
+			var hauteur = element.offsetHeight;
+			var largeur = element.offsetWidth;
+			var radius = element.style.borderRadius;
+			element.addEventListener('click', function()
+			{
+				var color = window.getComputedStyle(element, null).getPropertyValue("background-color");
+				if (color == 'rgb(255, 0, 0)')
+				{
+					element.style.backgroundColor = 'rgb(0, 255, 0)';
+				}
+				else if (color == 'rgb(0, 255, 0)')
+				{
+					element.style.backgroundColor = 'rgb(0, 0, 255)';
+				}
+				else if (color == 'rgb(0, 0, 255)')
+				{
+					element.style.backgroundColor = 'rgb(255, 0, 0)';
+				}
+			
+				if (hauteur == 420 && largeur == 420)
+				{
+					hauteur = 200;
+					largeur = 200;
+					radius += 110;
+					element.style.width = hauteur + "px";
+					element.style.height = largeur + "px";
+				}
+				hauteur += 10;
+				largeur += 10;
+				radius += 110;
+				element.style.width = hauteur + "px";
+				element.style.height = largeur + "px";
+				element.style.borderRadius = radius + "px";
+			});
+
+			element.addEventListener('mouseout', function()
+			{
+				var color = window.getComputedStyle(element, null).getPropertyValue("background-color");
+				if (color == 'rgb(255, 0, 0)')
+				{
+					element.style.backgroundColor = 'rgb(0, 0, 255)';
+				}
+				else if (color == 'rgb(0, 0, 255)')
+				{
+					element.style.backgroundColor = 'rgb(0, 255, 0)';
+				}
+				else if (color == 'rgb(0, 255, 0)')
+				{
+					element.style.backgroundColor = 'rgb(255, 0, 0)';
+				}
+				if (hauteur == 200 && largeur == 200)
+				{
+					hauteur = 200;
+					largeur = 200;
+					element.style.width = hauteur + "px";
+					element.style.height = largeur + "px";
+				}
+				else
+				{
+					hauteur -= 5;
+					largeur -= 5;
+					element.style.width = hauteur + "px";
+					element.style.height = largeur + "px";
+				}
+			});
+		</script>
+	</body>
+</html>

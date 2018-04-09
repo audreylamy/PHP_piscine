@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: rgb(255, 0, 0);
+			border-radius: 100px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id='size' ></div>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				var element = $('#size');
+				var hauteur = element.height();
+				var largeur = element.width();
+				var radius = element.css("border-radius");
+				
+			element.click(function()
+			{
+				var color = element.css("background-color");
+				if (color == 'rgb(255, 0, 0)')
+				{
+					element.css("background-color", "rgb(0, 255, 0)");
+				}
+				else if (color == 'rgb(0, 255, 0)')
+				{
+					element.css("background-color", "rgb(0, 0, 255)");
+				}
+				else if (color == 'rgb(0, 0, 255)')
+				{
+					element.css("background-color", "rgb(255, 0, 0)");
+				}
+				if (element.height() == 420 && element.width() == 420)
+				{
+					element.css("height", "200");
+					element.css("width", "200");
+					element.css("border-radius", "+=110")
+				}
+				element.css("height", "+=10");
+				element.css("width", "+=10");
+				element.css("border-radius", "+=110")
+			});
+			element.mouseout(function()
+			{
+				var color = element.css("background-color");
+				if (color == 'rgb(255, 0, 0)')
+				{
+					element.css("background-color", "rgb(0, 0, 255)");
+				}
+				else if (color == 'rgb(0, 0, 255)')
+				{
+					element.css("background-color", "rgb(0, 255, 0)");
+				}
+				else if (color == 'rgb(0, 255, 0)')
+				{
+					element.css("background-color", "rgb(255, 0, 0)");
+				}
+				if (element.height() == 200 && element.width() == 200)
+				{
+					element.css("height", "200");
+					element.css("width", "200");
+				}
+				else 
+				{
+					element.css("height", "-=5");
+					element.css("width", "-=5");
+				}
+			});
+			});
+		</script>
+	</body>
+</html>

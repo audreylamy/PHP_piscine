@@ -1,0 +1,236 @@
+*{
+	background: rgb(85, 84, 84);
+}
+
+#head{
+	height: 135px;
+	margin-top: 10px;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px black;
+	margin-bottom: 15px;
+}
+
+#body{
+    width:100%;
+}
+
+#left{
+	text-align: center;
+	height: auto;
+    width: 6%;
+    margin-left: 22%;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px black;
+}
+
+#middle{
+    height: auto;
+    width: 42.5%;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px black;
+    margin-top: -16.6%;
+    margin-left: 29%;
+    margin-right: 32%;
+}
+
+#right{
+	text-align: center;
+    width: 6%;
+	height: 440px;
+    margin-top: -24.3%;
+    margin-left:  72.5%;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px black;
+}
+
+#green_block{
+	height: 165px;
+	margin-top: 4%;
+	margin-right:60%;
+	margin-left: 19%;
+	background-color: rgb(136, 255, 137);
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px black;
+	position: relative;
+}
+
+#logo{
+	margin-top: 10px;
+	width: 450px;
+	max-width: 100%;
+	margin-left: 10px;
+	height: auto;
+	background: transparent;
+}
+
+#loupe{
+	background: transparent;
+	float: right;
+	margin-right: 28px;
+	margin-top: 15px;
+	width: 240px;
+}
+
+#reload{
+	background: transparent;
+	float: right;
+	margin-right: -260px;
+	margin-top: 8px;
+	width: 18px;
+}
+
+#close{
+	background: transparent;
+	float: right;
+	margin-right: -260px;
+	margin-top: 105px;
+	width: 18px;
+}
+
+#cluster{
+	background-color: rgb(144, 144, 144);
+	width:98%;
+	height:97%;
+	margin-left: 10px;
+	padding-top: 10px;
+    padding-bottom : 10px;
+	display: block;
+}
+
+#arrow{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	margin-top: 5px;
+	padding-top: 3px;
+}
+
+#main{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+}
+
+#oeil{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+	border: solid 5px red;
+	border-radius: 5px;
+}
+
+#outil{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+}
+
+#chat-icon{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+}
+
+#book{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+}
+
+#towel{
+	width: 50%;
+	background-color: rgb(144, 144, 144);
+	padding-top: 3px;
+}
+
+#brick{
+	height: 18%;
+	width: 120px;
+	background-image: url(resources/brick.jpg);
+	background-repeat: repeat;
+	width:90%;
+	margin-left: 8px;
+}
+
+#part1{
+	background-color: rgb(136, 255, 137);
+	font-size: 18px;
+	font-family: arial;
+	margin-left: 10px;
+	margin-right: 60px;
+	margin-top: 5px;
+}
+
+#part2{
+	background-color: rgb(136, 255, 137);
+	font-size: 16px;
+	font-family: arial;
+	margin-left: 10px;
+	margin-right: 60px;
+	margin-top: -20px;
+	margin-bottom: -10px;
+	font-style: italic;
+}
+
+#maj{
+	background-color: rgb(136, 255, 137);
+	font-size: 36px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#word{
+	background-color: rgb(136, 255, 137);
+	font-family: arial;
+	text-shadow: 5px 5px 6px red; 
+}
+
+#form{
+	background-color: rgb(136, 255, 137);
+}
+
+#rep{
+	margin-left: 15px;
+	margin-top: -20px;
+	background-color: white;
+}
+
+#button{
+	background-image:linear-gradient(white, rgb(202, 199, 199));
+	border-radius: 2px;
+}
+
+#question{
+	border-style: inset;
+	margin-left: 10px;
+	background: white;
+	border-width: 0.2em;
+	border-radius: 2px;
+}
+
+.lien{
+	text-decoration:none;
+	background-color: rgb(144, 144, 144);
+}
+
+.link_pic1{
+	height: 90px;
+	width: 40px;
+	margin-top: 15%;
+	margin-left: 15%;
+	background-color: transparent;
+	position: absolute;
+}
+
+.link_pic2{
+	height: 80px;
+	width: 80px;
+	margin-top: 16%;
+	margin-left: 35%;
+	background-color: transparent;
+	position: absolute;
+}

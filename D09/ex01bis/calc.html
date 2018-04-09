@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+		<input id="text1" type="text">
+		<select id="select">
+			<option value="+">+</option> 
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		  </select>
+		<input id="text2" type="text">
+		<input id="submit" type="submit" value="Try me!">
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			var element = $('#submit');
+			element.click(function()
+			{
+				var text1 = $('#text1').val();
+				var text2 = $('#text2').val();
+				var select = $('#select');
+				if (parseInt(text1) != null || parseInt(text2) != null)
+				{
+					if (parseInt(text1) >= 0 && parseInt(text2) >= 0 && isFinite(text1) && isFinite(text2))
+					{
+						if ($('#select option:selected').val() == '+')
+				 		{
+				 			alert(parseInt(text1) + parseInt(text2));
+				 			console.log(text1 + parseInt(text2));
+				 		}
+				 		else if ($('#select option:selected').val() == '-')
+				 		{
+				 			alert(parseInt(text1) - parseInt(text2));
+							console.log(parseInt(text1) - parseInt(text2));
+				 		}
+						else if ($('#select option:selected').val() == '*')
+				 		{
+				 			alert(parseInt(text1) * parseInt(text2));
+				 			console.log(parseInt(text1) * parseInt(text2));
+				 		}
+				 		else if ($('#select option:selected').val() == '/')
+				 		{
+							if (parseInt(text2) == 0)
+				 			{
+								alert('It\'s over 9000!');
+				 				console.log('It\'s over 9000!');
+							}
+				 			else
+				 			{
+				 				alert(parseInt(text1) / parseInt(text2));
+								console.log(parseInt(text1) / parseInt(text2));
+				 			}
+				 		}
+				 		else if ($('#select option:selected').val() == '%')
+				 		{
+				 			if (parseInt(text2) == 0)
+				 			{
+				 				alert('It\'s over 9000!');
+				 				console.log('It\'s over 9000!');
+				 			}
+				 			else
+							{
+				 			alert(parseInt(text1) % parseInt(text2));
+				 			console.log(parseInt(text1) % parseInt(text2));
+				 			}
+				 		}
+				 	}
+				 	else
+				 	{
+				 		alert('Error :(');
+				 	}
+				}
+				else
+				{
+				 	alert('Error :(');
+				}
+			});
+			setTimeout(showMessage, 30000);
+			function showMessage()
+			{
+				alert('Please, use me...');
+			}
+		});
+		</script>
+	</body>
+</html>
